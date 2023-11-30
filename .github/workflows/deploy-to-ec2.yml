@@ -28,8 +28,8 @@ jobs:
     runs-on: [aws-ec2]
     steps:
       - name: Pull image from docker hub
-        run: docker pull practice/node-app:latest
+        run: docker pull kmchethan/magga:latest
       - name: Delete old container
-        run: docker rm -f node-app-container
+        run: docker rm -f magga-container
       - name: Run docker container
-        run: docker run -d -p 8080:8080 --name node-app-container practice/node-app
+        run: docker run -d -p 8080:8080 --name magga-container kmchethan/magga
