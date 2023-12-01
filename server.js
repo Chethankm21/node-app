@@ -9,6 +9,7 @@ app.set('view engine', 'ejs');
 // index page
 app.get('/', function(req, res) {
   var mascots = [
+    { name: 'Chethan K M', organization: "Tricon", birth_year: 1999},
     { name: 'Sammy', organization: "DigitalOcean", birth_year: 2012},
     { name: 'Tux', organization: "Linux", birth_year: 1996},
     { name: 'Moby Dock', organization: "Docker", birth_year: 2013}
