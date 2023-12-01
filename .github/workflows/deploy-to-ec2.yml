@@ -33,3 +33,5 @@ jobs:
         run: docker rm -f magga-container
       - name: Run docker container
         run: docker run -d -p 8080:8080 --name magga-container kmchethan/magga
+      - name: Showing URL
+        run: echo "http://localhost:8080"
